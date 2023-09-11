@@ -72,9 +72,9 @@ let player2Points = 0;
 
 
 function playACard(player1Cards, player2Cards){
-for (let i=j=0; i < player1Cards.length; i++, j++){
+for (let i=0; i < player1Cards.length; i++){
   const card1 = player1Cards[i]; // Draw a card from Player 1's deck
-  const card2 = player2Cards[j]; // Draw a card from Player 2's deck
+  const card2 = player2Cards[i]; // Draw a card from Player 2's deck
   console.log('Player 1 pulls ' + card1.suit + card1.displayValue + '. Player 2 pulls ' + card2.suit + card2.displayValue);
   if (card1.value > card2.value) {
   console.log("Player 1 wins this round!");
